@@ -1,4 +1,3 @@
-
 var accordions = document.getElementsByClassName("accordion");
 
 for (var i = 0; i < accordions.length; i++) {
@@ -15,3 +14,20 @@ for (var i = 0; i < accordions.length; i++) {
     }
   }
 }
+
+
+var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
+var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+
+function showPanel(panelIndex,colorCode) {
+  tabButtons.forEach(functon(node))
+    node.style.backgroundColor="";
+    node.style.color="";
+  };
+  tabButtons[panelIndex].style.backgroundColor=colorCode;
+  tabButtons[panelIndex].style.color="black";
+  tabPanels.forEach(function(node) {
+    node.style.display="none";
+  });
+  tabPanels[panelIndex].style.display="block";
+  tabPanels[panelIndex].style.backgroundColor="colorCode";

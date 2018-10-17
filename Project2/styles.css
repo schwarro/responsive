@@ -558,6 +558,8 @@ footer {
 
 /*END OF SOCIAL MEDIA SECTION*/
 
+/* Accordian */
+
 .container {
   width: 80%;
   max-width: 600px;
@@ -571,25 +573,15 @@ button.accordion {
   outline: none;
   text-align: left;
   padding: 15px 20px;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #444;
   cursor: pointer;
   transition: background-color 0.2s linear;
 }
 
-button.accordion:after {
-  content: '\f055';
-  font-family: "fontawesome";
-  font-size: 14px;
-  float: right;
-}
-
-button.accordion.is-open:after {
-  content: '\f056';
-}
-
 button.accordion:hover, button.accordion.is-open {
-  background-color: #ddd;
+  background-color: green;
+  color: white;
 }
 
 .accordion-content {
@@ -600,4 +592,47 @@ button.accordion:hover, button.accordion.is-open {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
+}
+
+.accordion-content > p {
+  font-size: 1.6rem;
+}
+
+/* END OF ACCORDIAN  */
+
+/* TABS */
+
+.tabContainer {
+  width: 100%;
+  height: 350px;
+}
+
+.tabContainer .buttonContainer {
+  height: 15%;
+}
+
+.tabContainer .buttonContainer .tabButton {
+  width: 25%;
+  height: 100%;
+  float:left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  fontsize: 0px;
+  background-color: #eee
+}
+
+.tabContainer .buttonContainer .tabButton:hover {
+  background-color: green;
+}
+
+.tabContainer .tabPanel {
+  height: 85%;
+  background-color: grey;
+  color: black;
+  text-align: center;
+  padding-top: 105px;
+  font-size: 22px;
+  display: none;
 }

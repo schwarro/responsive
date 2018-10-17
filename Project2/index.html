@@ -88,81 +88,53 @@
 		<section class="section2">
 			<div class="wrapper">
 				<div class= "aboutpart2 clearfix">
-
-
-					<div class="container">
-	<h1>Accordions</h1>
-
-	<button class="accordion">Accordian #1</button>
-	<div class="accordion-content">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-		</p>
-	</div>
-
-
-	<button class="accordion">Accordian #2</button>
-	<div class="accordion-content">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-		</p>
-	</div>
-
-
-	<button class="accordion">Accordian #3</button>
-	<div class="accordion-content">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-		</p>
-	</div>
-</div>
-
-
-
-
-
-
-
-					<!-- <div class="part1 clearfix">
-						<h2>why choose us</h2>
-						<nav class="clearfix">
-							<ul>
-								<li><a href="">Responsive</a></li>
-								<li><a href="">Retina Ready</a></li>
-								<li><a href="">Features</a></li>
-							</ul>
-						</nav>
-						<div class="responsive-info clearfix">
-							<img class="sectionimage" src="images/whychoose.jpg" alt="A man working at a table with a computer on plant on it">
-							 Photo by Štefan Štefančík on Unsplash -->
-							<!-- <p class="sectioninfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit do eiusmod tempor incididunt ut labore et dolore a le ad veniam, quis nostrud citation ullamco laboris. Lite amet, consectetur adipisicing elit. <br> Labore et dolore a le ad minim veniam, quis nostrud ullamco laboris. Lite amet.</p>
+					<div class="tabContainer">
+						<h2>Why Choose Us?</h2>
+						<div class="buttonContainer">
+							<button class="tabButton" onclick="showPanel(0, 'green')">Responsive</button>
+							<button class="tabButton" onclick="showPanel(1 'green')">Retina-Ready</button>
+							<button class="tabButton" onclick="showPanel(2 'green')">Features</button>
 						</div>
-					</div> -->
-
-
-
-
-
-
-
-
-
-					<!-- <div class="part2">
-						<h2>best features</h2>
-						<h3 class="feature1"><i class="fas fa-cog"></i>Theme Options</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elited do eiusmod tempor incididunt ut labore et dolore a le ad veniam, quis nostrud citation ullamco laboris. Lite amet, consectetur adipisicing elit.</p>
-						<h3 class="feature2"><i class="fas fa-globe"></i>Great Support</h3>
-						<h3 class="feature3"><i class="fab fa-audible"></i>Browser Compatibility</h3>
-					</div> -->
+						<div class="tabPanel">
+							Tab 1: Content
+						</div>
+						<div class="tabPanel">
+							Tab 2: Content
+						</div>
+						<div class="tabPanel">
+							Tab 3: Content
+						</div>
+					</div>
+					<div class="container">
+						<h2>Best Features</h2>
+						<button class="accordion">Accordian #1</button>
+						<div class="accordion-content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+							</p>
+						</div>
+						<button class="accordion">Accordian #2</button>
+						<div class="accordion-content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+							</p>
+						</div>
+						<button class="accordion">Accordian #3</button>
+						<div class="accordion-content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
