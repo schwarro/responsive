@@ -562,8 +562,8 @@ footer {
 
 .container {
   width: 80%;
-  max-width: 600px;
-  margin: 50px auto;
+	margin: 0 auto;
+	grid-column-start: 2;
 }
 
 button.accordion {
@@ -602,37 +602,57 @@ button.accordion:hover, button.accordion.is-open {
 
 /* TABS */
 
-.tabContainer {
-  width: 100%;
-  height: 350px;
+ #tabbed-content li {
+	display: inline-block;
+	padding: 10px 14px;
+	background: white;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-right: 10px;
+	border-top: 2px solid transparent;
 }
 
-.tabContainer .buttonContainer {
-  height: 15%;
+#tabbed-content li:hover {
+	border-top: 2px solid green;
 }
 
-.tabContainer .buttonContainer .tabButton {
-  width: 25%;
-  height: 100%;
-  float:left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
-  fontsize: 0px;
-  background-color: #eee
+#tabbed-content .panel {
+	display: none;
+	border: 1px solid #ddd;
+	border-radius: 4px;
 }
 
-.tabContainer .buttonContainer .tabButton:hover {
-  background-color: green;
+#tabbed-content .panel.active {
+	display: block;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: white;
+	padding: 0;
 }
 
-.tabContainer .tabPanel {
-  height: 85%;
-  background-color: grey;
-  color: black;
-  text-align: center;
-  padding-top: 105px;
-  font-size: 22px;
-  display: none;
+.panel > img {
+	grid-column-start: 1;
+}
+
+.panel > p {
+	grid-column-start: 2;
+	margin-left: 10px;
+}
+
+#tabbed-content {
+	grid-column-start: 1;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* END OF TABS SECTION  */
+
+.section2 > .wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.section2 {
+	background-color: lightgrey;
+	padding: 3% 0;
 }

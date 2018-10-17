@@ -15,19 +15,18 @@ for (var i = 0; i < accordions.length; i++) {
   }
 }
 
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel');
 
-var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
-var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
-
-function showPanel(panelIndex,colorCode) {
-  tabButtons.forEach(functon(node))
-    node.style.backgroundColor="";
-    node.style.color="";
-  };
-  tabButtons[panelIndex].style.backgroundColor=colorCode;
-  tabButtons[panelIndex].style.color="black";
-  tabPanels.forEach(function(node) {
-    node.style.display="none";
-  });
-  tabPanels[panelIndex].style.display="block";
-  tabPanels[panelIndex].style.backgroundColor="colorCode";
+tabs.addEventListener('click', function(e){
+  if(e.target.tagName == 'LI'){
+    const targetPanel = document.querySelector(e.target.dataset.target);
+    panels.forEach(function(panel){
+      if(panel == targetPanel){
+        panel.classList.add('active');
+      } else {
+        panel.classList.remove('active');
+      }
+    })
+  }
+});

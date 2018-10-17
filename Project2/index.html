@@ -87,53 +87,58 @@
 		<!-- WHY CHOOSE US/ABOUT US SECTION -->
 		<section class="section2">
 			<div class="wrapper">
-				<div class= "aboutpart2 clearfix">
-					<div class="tabContainer">
-						<h2>Why Choose Us?</h2>
-						<div class="buttonContainer">
-							<button class="tabButton" onclick="showPanel(0, 'green')">Responsive</button>
-							<button class="tabButton" onclick="showPanel(1 'green')">Retina-Ready</button>
-							<button class="tabButton" onclick="showPanel(2 'green')">Features</button>
-						</div>
-						<div class="tabPanel">
-							Tab 1: Content
-						</div>
-						<div class="tabPanel">
-							Tab 2: Content
-						</div>
-						<div class="tabPanel">
-							Tab 3: Content
-						</div>
+				<div id="tabbed-content">
+					<h2>Why Choose Us?</h2>
+					<ul class="tabs">
+						<li data-target="#about" class="active">About</li>
+						<li data-target="#features">Features</li>
+						<li data-target="#contact">Content</li>
+					</ul>
+					<div class="panel active" id="about">
+						<img src="images/choose1.jpg" alt="A woman pointing out on a contract form with a man beside her smiling">
+						<!-- Photo by rawpixel on Unsplash -->
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
 					</div>
-					<div class="container">
-						<h2>Best Features</h2>
-						<button class="accordion">Accordian #1</button>
-						<div class="accordion-content">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-							</p>
-						</div>
-						<button class="accordion">Accordian #2</button>
-						<div class="accordion-content">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-							</p>
-						</div>
-						<button class="accordion">Accordian #3</button>
-						<div class="accordion-content">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
-							</p>
-						</div>
+					<div class="panel" id="features">
+						<img src="images/choose2.jpg" alt="A man in front of a computer explaining the content to a woman">
+						<!-- Photo by rawpixel on Unsplash -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="panel" id="contact">
+						<img src="images/choose3.jpg" alt="A woman biting her pencil in front of her computer">
+						<!-- Photo by JESHOOTS.COM on Unsplash -->
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</div>
+				<div class="container">
+					<h2>Best Features</h2>
+					<button class="accordion">Theme Options</button>
+					<div class="accordion-content">
+						<p>
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est lab							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. orum. Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+						</p>
+						<p>
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+						</p>
+					</div>
+					<button class="accordion">Great Support</button>
+					<div class="accordion-content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+						</p>
+					</div>
+					<button class="accordion">Browser Compatibility</button>
+					<div class="accordion-content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+						</p>
 					</div>
 				</div>
 			</div>
@@ -142,7 +147,7 @@
 		<div class="wrapper">
 			<!-- GALLERY SECTION -->
 			<section class="gallery">
-				<h2>our work.</h2>
+				<h2>our work</h2>
 				<p>creative portfolio showcase</p>
 				<div class="box clearfix">
 					<div class="pictures clearfix">
