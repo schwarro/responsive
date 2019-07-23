@@ -8,7 +8,7 @@
   },
   "author": "Rob Schwartz",
   "license": "ISC",
-  "homepage": "https://schwarro.github.io/responsive"
+  "homepage": "https://schwarro.github.io/responsive",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
